@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Ax33jplw7hrLRTFu6",
+      });
+   })();
+</script>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <a href="index.html"> <h1>Posh</h1></a>
+        </header>
+        <main>
+            <div class="right">
+
+            </div>
+            <div class="left">
+                <h2>Book Now</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4f112c52-5ffa-4bfe-a050-10db68e84cf0">
+
+                    <div class="input-control">
+                        <input type="text" id="fullname" placeholder="Full Name" required>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+
+                        <select id="service" name="options">
+                         <option value="" disabled selected hidden>Select a Service</option>
+                         <option value="Hair" data-price="2000">Hair</option>
+                         <option value="Pedicure" data-price="1500">Pedicure</option>
+                         <option value="Face Makeup" data-price="4000">Face Makeup</option>
+                         <option value="Training" data-price="10000">Training</option>
+                     </select>
+                     <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input type="datetime-local" id="date-time" id="">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input type="email" id="email" id="" placeholder="Email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input type="number" id="phone-no" id="" placeholder="Phone No">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <select id="Payment" name="options">
+                            <option value="" disabled selected hidden>Select a Payment Method</option>
+                            <option value="option1">Hands On</option>
+                            <option value="option2">Esewa</option>
+                            <option value="option3">Phone Pay</option>
+                        </select>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <label for="">Price
+                        <span id="price-display"></span></label>
+                    </div>
+                <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>

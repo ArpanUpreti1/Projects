@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.container h1 {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  font-style: light;
+  font-size: 1.8vw;
+  margin: 0.5vw;
+}
+.container main {
+  height: 90%;
+  width: 90%;
+  box-shadow: 5px 5px 5px gray;
+  display: flex;
+}
+.container main .right {
+  height: 100%;
+  width: 60%;
+  background-image: url(./Img/undraw_makeup_artist_rxn8.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container main .left {
+  height: 100%;
+  width: 40%;
+  background: #f2efed;
+  border-top-left-radius: 5vw;
+}
+.container main .left h2 {
+  text-align: center;
+  margin-top: 2vw;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5vw;
+  color: #936147;
+}
+.container main .left form {
+  margin-top: 6vw;
+  gap: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container main .left form .input-control{
+  width: 100%;
+  margin-left: 7vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container main .left form .input-control .error{
+  display: block;
+  color: #ff3860;
+  font-size: 0.8vw;
+  height: 0.4vw;
+}
+.container main .left form .input-control label{
+  width: 80%;
+  border-bottom: 1px solid gray;
+  font-size: 1vw;
+  color: rgb(158, 155, 155);
+}
+.container main .left form .input-control label #price-display{
+  color: #936147;
+  font-size: 1.2vw;
+}
+.container main .left form  input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #936147;
+  background: transparent;
+  font-size: 1vw;
+  outline: none;
+}
+.input-control.sucess input,
+.input-control.sucess select {
+    border-bottom-color: 1px solid green; 
+}
+
+.input-control.error input,
+.input-control.error select {
+    border-bottom-color: red; 
+}
+.input-control.error .error {
+    color: red;
+    font-size: 0.9vw;
+    visibility: visible;
+}
+/* .container main .left form input:focus{
+  border-radius: 10px;
+  border: 1px solid green;
+} */
+.container main .left form input::placeholder {
+  color: rgb(158, 155, 155);
+}
+.container main .left form select {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #936147;
+  background: transparent;
+  font-size: 1vw;
+  outline: none;
+  color: rgb(158, 155, 155);
+}
+.container main .left form select option {
+  color: gray;
+  background-color: #f2efed;
+}
+input[type="datetime-local"] {
+  padding-left: 10px;
+  font-size: 16px;
+  background: transparent;
+  color: rgb(158, 155, 155);
+  outline: none;
+}
+.container main .left form button{
+    width: 80%;
+    height: 2vw;
+    background-color: #B97E5F;
+    color: #fff;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 4vw;
+    cursor: pointer;
+
+}
+

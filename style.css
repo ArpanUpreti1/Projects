@@ -1,0 +1,616 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left {
+  height: 100%;
+  width: 50%;
+  border-top-right-radius: 10vw;
+  background-image: url(./Img/pexels-shiny-diamond-3762663.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.right {
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 10vw;
+  background-color: #e8e1e1;
+}
+nav ul {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 2vw;
+  gap: 2.5vw;
+  margin-top: 1vw;
+}
+nav ul li {
+  font-size: 1.1vw;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  position: relative;
+}
+.logo-text {
+  position: absolute;
+  font-family: "Great Vibes", cursive;
+  font-weight: 100;
+  font-style: light;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 1vw;
+  font-size: 2.3vw;
+  cursor: pointer;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.slogan {
+  font-size: 1.1vw;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 500;
+  /* text-align: center; */
+  margin-top: 10vw;
+  font-size: 4vw;
+  color: #936147;
+}
+.vertical-line-one {
+  width: 0.1vw;
+  height: 200px;
+  background-color: #936147;
+  margin-top: 10vw;
+}
+.vertical-line-two {
+  width: 0.1vw;
+  height: 200px;
+  background-color: #936147;
+  margin-top: 10vw;
+}
+.desc-text {
+  font-size: 1.1vw;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 500;
+  margin-top: 2.5vw;
+  color: #6b6969;
+  text-align: center;
+  font-size: 1vw;
+}
+#details {
+  color: #b97e5fb4;
+  position: absolute;
+  left: 55%;
+  display: flex;
+  margin-top: 16vw;
+}
+#details i {
+  font-size: 1.5vw;
+}
+#details #star {
+  margin-left: 8vw;
+  display: flex;
+}
+#details #offer {
+  margin-left: 8vw;
+  display: flex;
+}
+#details p {
+  font-size: 0.8vw;
+  margin-left: 0.5vw;
+}
+.btn-book {
+  position: absolute;
+  left: 62%;
+  font-size: 1.3vw;
+  border: none;
+  border-top-right-radius: 30px;
+  cursor: pointer;
+  padding: 0.5vw;
+  text-align: center;
+  margin-top: 2.5vw;
+  background-color: #b97e5f;
+  color: #fff;
+  box-shadow: 1px 1px 5px rgb(206, 116, 116);
+  transition: transform 0.5s ease;
+}
+
+.btn-book:hover {
+  background-color: #e97f46;
+  transform: translatey(-0.3vw);
+}
+/* Hover Animation for Navigation */
+nav ul li:hover {
+  color: #936147;
+}
+nav ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #936147;
+  transition: all 0.5s;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+
+/* Services Section */
+
+.Services {
+  height: 100%;
+  width: 100%;
+  background-color: #e8e1e1;
+}
+.Services header {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+}
+.Services header .line {
+  height: 2px;
+  width: 100px;
+  background-color: #936147;
+  margin-top: 1.1vw;
+  margin-right: 1vw;
+  animation: autoShow;
+  animation-timeline: view(40% auto);
+}
+.Services header .lineTwo {
+  height: 2px;
+  width: 100px;
+  background-color: #936147;
+  margin-top: 1.1vw;
+  margin-left: 1vw;
+  animation: autoShow;
+  animation-timeline: view(40% auto);
+}
+.Services header h1 {
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  color: #936147;
+  animation: autoShow;
+  animation-timeline: view(40% auto);
+}
+.Services .services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  margin-top: 4vw;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12vw;
+}
+
+.service-item {
+  text-align: center;
+}
+
+.circle {
+  height: 13vw;
+  width: 13vw;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.circle:hover {
+  transform: scale(1.1);
+}
+.service-text {
+  font-size: 1.3vw;
+  color: #936147;
+  font-family: "Philosopher", sans-serif;
+  text-align: left;
+  margin-left: 3vw;
+}
+.team {
+  height: 100%;
+  width: 100%;
+  background-color: #d4e9e6b9;
+}
+
+.Services .services-content #c1 {
+  background-image: url(./Img/June-Rose-Bridal-Makeup-Hair-Southern-Highlands-Sydney-1.jpg);
+  background-size: cover;
+  background-position-x: -7vw;
+  background-repeat: no-repeat;
+}
+.Services .services-content #c2 {
+  background-image: url(./Img/MakeUp.jpg);
+  background-size: cover;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+}
+.Services .services-content #c3 {
+  background-image: url(./Img/Nails.jpg);
+  background-size: cover;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+}
+.Services .services-content #c4 {
+  background-image: url(./Img/RealEye.jpg);
+  background-size: cover;
+  background-position-x: -3vw;
+  background-repeat: no-repeat;
+}
+.Services .services-content #c5 {
+  background-image: url(./Img/Bridal.jpg);
+  background-size: cover;
+  background-position-x: -3vw;
+  background-repeat: no-repeat;
+}
+.Services .services-content #c6 {
+  background-image: url(./Img/Artist.jpg);
+  background-size: cover;
+  background-position-x: -3vw;
+  background-repeat: no-repeat;
+}
+.team header {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  margin-top: 4vw;
+}
+.team header .line {
+  width: 5.5vw;
+  height: 0.15vw;
+  background-color: #936147;
+  margin-top: 1vw;
+  animation: autoShow;
+  animation-timeline: view(40% auto);
+}
+.team header .lineTwo {
+  width: 5.5vw;
+  height: 0.15vw;
+  background-color: #936147;
+  margin-top: 1vw;
+  animation: autoShow;
+  animation-timeline: view(40% auto);
+}
+.team header h1 {
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  color: #936147;
+  animation: autoShow;
+  animation-timeline: view(40% auto);
+}
+.team .members{
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    height: 100%;
+    width: 100%;
+    margin-top: 4vw;
+}
+.team .members .card{
+    width: 17vw;
+    height: 60%;
+    background-color: #936147;
+    border-top-right-radius: 5vw;
+}
+.team .members  #first-card{
+    background-image: url("./Img//gir1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:-10vw ;
+  
+}
+.team .members  #second-card{
+    background-image: url("./Img//girl2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:-6vw ;
+}
+.team .members  #third-card{
+    background-image: url("./Img//girl3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:-14vw ;
+}
+.team .members .member .name-text {
+    margin-top: 2vw;
+    font-size: 1.3vw;
+    color: #936147;
+    font-weight: 500;
+    text-align: center;
+
+}
+.team .members .member .desc{
+    font-size: 1.1vw;
+    color: #000;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+
+/* Customer Reviews Section */
+.customer{
+    height: 100%;
+    width: 100%;
+    background-color: #e8e1e1;
+}
+.customer header h1{
+    font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 4vw;
+  color: #936147;
+}
+.customer .content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.customer .content .text{
+    width: 50%;
+    height: 100%;
+
+}
+.customer .content .photo{
+    width: 50%;
+    height: 100%;
+
+}
+.customer .content .photo .cirlce-overlap{
+    margin-top: 4vw;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.customer .content .photo .cirlce-overlap .happy-customer{
+    height: 40vh;
+    width: 40vh;
+    background-color: rgb(54, 53, 53);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+.customer .content .photo .cirlce-overlap .happy-customer h1{
+    color: #fff;
+    font-size: 2vw;
+    z-index: 3;
+}
+.customer .content .photo .cirlce-overlap .makeup{
+    height: 30vh;
+    width: 30vh;
+    background-image:url(./Img/RealEye.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:-4vw ;
+    border-radius: 50%;
+    position: absolute;
+    right: 90%;
+    z-index: 2;
+}
+.customer .main-text{
+    display: flex;
+    flex-direction: column;
+}
+/* For Customer Photo with their review */
+.customer .main-text .customer-photo{
+    margin-left: 6vw;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 6vw;
+}
+.customer .main-text .customer-photo .photo{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: pink;
+    cursor: pointer;
+}
+.customer .main-text .customer-photo .photo:hover{
+    border: 0.2vw solid #936147;
+}
+.customer .main-text .customer-photo #Photo-one{
+    background-image: url(./Img/Customer1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.2vw solid #936147;
+}
+.customer .main-text .customer-photo #Photo-two{
+    background-image: url(./Img/Customer2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.customer .main-text .customer-photo #Photo-three{
+    background-image: url(./Img/Customer3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.customer .main-text .customer-photo #Photo-four{
+    background-image: url(./Img/Customer4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.customer .main-text .main-review{
+    margin-left: 4vw;
+    margin-top: 4vw;
+    max-width: 50%;
+}
+.customer .main-text .main-review i{
+    font-size: 2.4vw;
+    color: #936147;
+}
+.customer .main-text .main-review .details{
+    display: flex;
+    gap: 4vw;
+}
+.customer .main-text .main-review .details p{
+    margin-top: 2vw;
+    font-size: 1vw;
+    color: #6b6969;
+    line-height: 1.3vw;
+}
+.customer .main-text .main-review .details .straight-line{
+    height: 20vw;
+    width: 0.3vw;
+    background-color: #936147;
+}
+.customer .main-text .main-review .details .customer-info{
+ width: 73vw;
+}
+.customer .main-text .main-review .details .customer-info h1{
+    margin-top: 6vw;
+    font-size: 1.3vw;
+    color: #936147;
+
+}
+
+/* Footer Section */
+footer{
+    height: 18vw;
+    width: 100%;
+    background-color: #D4E9E6;
+}
+footer .footer-content{
+    display: flex;
+    gap: 19vw;
+}
+footer .footer-content .brand{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    position: relative;
+}
+footer .footer-content .brand h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-style: light;
+    margin: 0px;
+}
+footer .footer-content .brand p{
+    margin-top: 2vw;
+    font-size: 1vw;
+    color: #6b6969;
+}
+footer .footer-content .brand .socials{
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 4vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+footer .footer-content .brand .socials i{
+    transition: transform 0.5s ease;
+}
+footer .footer-content .brand .socials i:hover{
+    transform: scale(1.3);
+}
+footer .footer-content .links{
+    margin-top: 2vw;
+}
+footer .footer-content .links h1{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1vw;
+    color: #936147;
+
+}
+footer .footer-content .links .all-links{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #6b6969;
+}
+footer .right-reserved{
+    text-align: center;
+    color: #6b6969;
+    font-size: 0.8vw;
+    margin-top: 4vw;
+}
+footer .footer-content .time{
+    margin-top: 2vw;
+}
+footer .footer-content .time h1{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1vw;
+    color: #936147;
+
+}
+footer .footer-content .time .days{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #6b6969;
+}
+
+footer .footer-content .location{
+    margin-top: 2vw;
+}
+footer .footer-content .location h1{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1vw;
+    color: #936147;
+
+}
+footer .footer-content .location .area{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #6b6969;
+}
